@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "type": "chrome",
+    "request": "attach",
+    "name": "Attach to Chrome, with sourcemaps",
+    "url": "http://localhost:4200/",
+    "port": 9222,
+    "webRoot": "${workspaceRoot}",
+    "sourceMaps": true,
+    "diagnosticLogging": true,
+    "sourceMapPathOverrides": {
+      "webpack:///./*": "${webRoot}/*"
+    },
+    "skipFiles": [
+      "vendor.bundle.js",
+      "polyfills.bundle.js"
+    ]
+  }]
+}
